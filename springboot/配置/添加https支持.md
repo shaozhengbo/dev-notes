@@ -7,11 +7,11 @@ keytool -genkey -alias tomcat  -storetype PKCS12 -keyalg RSA -keysize 2048  -key
 ```
 
 参数的含义
-> 1.-storetype 指定密钥仓库类型
-> 2.-keyalg 生证书的算法名称，RSA是一种非对称加密算法
-> 3.-keysize 证书大小
-> 4.-keystore 生成的证书文件的存储路径
-> 5.-validity 证书的有效期
+> 1. -storetype 指定密钥仓库类型
+> 2. -keyalg 生证书的算法名称，RSA是一种非对称加密算法
+> 3. -keysize 证书大小
+> 4. -keystore 生成的证书文件的存储路径
+> 5. -validity 证书的有效期
 
 ## 2.部署证书
 
