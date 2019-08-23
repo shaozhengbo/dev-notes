@@ -8,6 +8,8 @@
 
 2. [swagger配置](./springboot/swagger/整合Swagger.md)
 
-2. [跨域支持](./springboot/配置/跨域支持.md)
+3. [热部署](./springboot/配置/热部署.md)
 
-3. [https支持](./springboot/配置/添加https支持.md)
+4. [跨域支持](./springboot/配置/跨域支持.md)
+
+5. [https支持](./springboot/配置/添加https支持.md)
