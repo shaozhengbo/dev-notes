@@ -1,10 +1,12 @@
-# 第1部分 Spring的核心
+# [Spring实战（第4版）](../../../../README.md)
 
-## 第1章 Spring之旅
+## [第1部分 Spring的核心](../../../README.md)
 
-### 1.1 简化Java开发
+### [第1章 Spring之旅](../../README.md)
 
-#### 1.1.1 激发POJO的潜能
+#### [1.1 简化Java开发](../README.md)
+
+##### 1.1.1 激发POJO的潜能
 
 很多框架通过强迫应用继承它们的类或者接口从而导致应用与框架绑死，这种侵入式的编程方式在早期版本的Struts、WebWork、Tapestry以及无数其他的Java规范和框架中都能看到
 
