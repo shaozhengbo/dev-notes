@@ -14,6 +14,8 @@
 
 > 程序清单1.1 Spring不会在HelloWorldBean上有任何不合理的要求
 ```Java
+package com.habuma.spring;
+
 public class HelloWorldBean {
     public String sayHello() {
         return "Hello World";
