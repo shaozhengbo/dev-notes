@@ -1,0 +1,10 @@
+# Spring实战（第4版）
+
+## 第1部分 Spring的核心
+
+Spring为企业级开发提供了丰富的功能，但所有功能的底层都依赖于它的两个核心特性 => 依赖注入（dependency injection，DI）、面向切面编程（aspect-oriented programming，AOP）
+
+### [1. 第1章“Spring之旅”中，快速介绍一下Spring框架，包括Spring DI和AOP的概况，以及它们是如何帮助我们解耦应用组件的](./第1章_Spring之旅/README.md)
+### [2. 第2章“装配Bean”中，深入探讨如何将应用中的各个组件配装在一起，会看到Spring所提供的自动配置、基于Java的配置和XML配置](./第2章_Spring之旅/README.md)
+### [3. 第3章“高级装配”中，展现一些最大化Spring威力的技巧和技术，包括条件化装配、处理自动装配时的歧义性、作用域以及Spring表达式语言](./第3章_Spring之旅/README.md)
+### [4. 第4章“面向切面的Spring”中，展示如何使用Spring的AOP特性把系统级的服务（例如安全和审计）从它们所服务的对象中解耦出来。本章也为后面的第9章、第13章和第14章做了铺垫，这几章将会分别介绍将Spring AOP用于声明式安全以及缓存](./第4章_Spring之旅/README.md)
