@@ -44,3 +44,45 @@ EOF
 sudo systemctl daemon-reload
 sudo systemctl restart docker
 ```
+
+## 常用命令
+
+- 添加docker开机启动
+```shell
+systemctl enable docker
+```
+
+- 启动命令
+```shell
+systemctl start docker
+```
+
+- 重启命令
+```shell
+systemctl restart docker
+```
+
+- 停止命令
+```shell
+systemctl stop docker
+```
+
+- 查看版本
+```shell
+docker version
+```
+
+- 卸载
+```shell
+yum remove docker-ce
+```
+
+- 查看窗口端口映射
+```shell
+docker ps
+```
+
+- 查看所有容器（包括被关闭的）
+```shell
+docker ps --all
+```
