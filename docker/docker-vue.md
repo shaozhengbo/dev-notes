@@ -25,6 +25,11 @@ server {
         index  index.html index.htm;
     }
 
+    location /api/ {
+        add_header 'Access-Control-Allow-Origin' '*';
+        proxy_pass http://182.92.86.150:8080/;
+    }
+
     #error_page  404              /404.html;
 
     # redirect server error pages to the static page /50x.html
