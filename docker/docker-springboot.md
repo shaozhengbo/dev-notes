@@ -1,6 +1,6 @@
 # 使用 Docker 部署 Springboot
 
-1. Spring Boot 项目添加 Docker 支持
+## 1. Spring Boot 项目添加 Docker 支持
 
 在 pom.xml-properties 中添加 Docker 镜像名称
 
@@ -50,7 +50,7 @@ ENTRYPOINT ["java","-Djava.security.egd=file:/dev/./urandom","-jar","/app.jar"]
 > ENTRYPOINT ，为了缩短 Tomcat 的启动时间，添加 java.security.egd 的系统属性指向/dev/urandom 作为 ENTRYPOINT
 > 这样 Spring Boot 项目添加 Docker 依赖就完成了。
 
-2. 使用 Docker 部署 Spring Boot 项目
+## 2. 使用 Docker 部署 Spring Boot 项目
 
 将项目拷贝服务器中，进入项目路径下进行打包测试
 
@@ -67,7 +67,7 @@ java -jar target/{包名}
 mvn package docker:build
 ```
 
-3. 运行镜像
+## 3. 运行镜像
 
 ```shell
 docker run -p 8080:8080 -t {image名}
