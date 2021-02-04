@@ -1,8 +1,8 @@
 # docker安装
 
-## 2020/02/13
+[TOC]
 
-## 用来记录在阿里云部署docker的过程
+## 安装步骤
 
 1. 添加yum源
 ```shell
@@ -86,3 +86,25 @@ docker ps
 ```shell
 docker ps --all
 ```
+
+
+
+## linux下解决docker端口映射到宿主机后外网无法访问的问题
+
+```
+解决办法：
+# vi /etc/sysctl.conf
+或者
+# vi /usr/lib/sysctl.d/00-system.conf
+添加如下代码：
+net.ipv4.ip_forward=1
+
+重启network服务
+# systemctl restart network
+
+查看是否修改成功
+# sysctl net.ipv4.ip_forward
+
+如果返回为“net.ipv4.ip_forward = 1”则表示成功了
+```
+
