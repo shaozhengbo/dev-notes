@@ -10,8 +10,25 @@ docker tag  registry.cn-hangzhou.aliyuncs.com/helowin/oracle_11g oracle_11g
 docker rmi  registry.cn-hangzhou.aliyuncs.com/helowin/oracle_11g
 ```
 ```shell
-#数据持久化： 
-# docker run -d -p 1521:1521 --name oracle_11g   -v {宿主机挂载目录}:/home/oracle/app/oracle/data/  oracle_11g 
+# 数据持久化： 
+# docker volume create oracle-11g
+
+# 查看 volume 信息
+# docker volume inspect oracle-11g
+# [
+#     {
+#         "CreatedAt": "2021-03-23T19:38:29+08:00",
+#         "Driver": "local",
+#         "Labels": {},
+#         "Mountpoint": "/var/lib/docker/volumes/oracle-11g/_data",
+#         "Name": "oracle-11g",
+#         "Options": {},
+#         "Scope": "local"
+#     }
+# ]
+
+# 挂载 volume 启动
+# docker run -d -p 1521:1521 --name oracle_11g   -v oracle-11g:/home/oracle/app/oracle/data/  oracle_11g 
 ```
 容器内部 root密码 helowin
 
