@@ -55,12 +55,16 @@ docker exec -it oracle_11g bash
 ## 4. 配置环境变量，使用root 配置/etc/profile ,增加以下内容
 
 ```shell
+# 切换到root用户
 su root# 密码helowin
 
+# 编辑环境变量配置文件
+vi /etc/profile
+
+# 在文件最下方增加以下内容
+# ORACLE 11G
 export ORACLE_HOME=/home/oracle/app/oracle/product/11.2.0/dbhome_2
- 
 export ORACLE_SID=helowin
- 
 export PATH=$ORACLE_HOME/bin:$PATH
 ```
 
