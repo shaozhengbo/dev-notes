@@ -27,7 +27,7 @@ docker run -d -p 1521:1521 --name oracle_11g oracle_11g
 ## 3. 进入容器
 
 ```shell
-docker exec -it oracle11g bash
+docker exec -it oracle_11g bash
 ```
 
 
