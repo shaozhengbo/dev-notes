@@ -9,7 +9,11 @@ docker pull registry.cn-hangzhou.aliyuncs.com/helowin/oracle_11g
 docker tag  registry.cn-hangzhou.aliyuncs.com/helowin/oracle_11g oracle_11g
 docker rmi  registry.cn-hangzhou.aliyuncs.com/helowin/oracle_11g
 ```
-
+```shell
+#数据持久化： 
+# docker volume create oracle-11g 
+# docker run -d -p 1521:1521 --name oracle_11g   -v oracle-11g:/home/oracle/app/oracle/data/  oracle_11g 
+```
 容器内部 root密码 helowin
 
 
