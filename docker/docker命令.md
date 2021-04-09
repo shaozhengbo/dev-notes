@@ -6,9 +6,20 @@
 ```
 
 
+
 # docker的mysql运行命令
+
 ```shell
 # -e MYSQL_ROOT_HOST=% 允许远程链接
 # -e MYSQL_ROOT_PASSWORD=123456 密码为123456
 docker run -itd --name mysql -p 3306:3306 -e MYSQL_ROOT_HOST=% -e MYSQL_ROOT_PASSWORD=123456 mysql:5.7
 ```
+
+
+
+# docker增加net配置()
+
+```shell
+docker run -d --network=host --restart=always nginx
+```
+
