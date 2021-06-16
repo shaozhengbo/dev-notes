@@ -37,6 +37,16 @@ plugins 中添加 Docker 构建插件：
 
 ```
 FROM openjdk:8-jdk-alpine
+
+# 增加一些命令及字体的依赖
+RUN echo "http://mirrors.aliyun.com/alpine/v3.6/main" > /etc/apk/repositories \
+    && echo "http://mirrors.aliyun.com/alpine/v3.6/community" >> /etc/apk/repositories \
+    && apk update upgrade \
+    && apk add --no-cache procps unzip curl bash tzdata \
+    && apk add ttf-dejavu \
+    && ln -sf /usr/share/zoneinfo/Asia/Shanghai /etc/localtime \
+    && echo "Asia/Shanghai" > /etc/timezone
+
 VOLUME /tmp
 ADD {打包后的jar包名} app.jar
 ENTRYPOINT ["java","-Djava.security.egd=file:/dev/./urandom","-jar","/app.jar"]
